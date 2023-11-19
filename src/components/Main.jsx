@@ -27,7 +27,7 @@ const Main = () => {
   return (
     <div className={styles.wrap}>
       <div className={styles.container}>
-        <h1 className={styles.heading}>Join</h1>
+        <h1 className={styles.heading}>Login</h1>
 
         <form className={styles.form}>
           <div className={styles.group}>
@@ -62,6 +62,15 @@ const Main = () => {
           >
             <button type="submit" className={styles.button}>
               Sign In
+            </button>
+          </Link>
+          <Link
+              className={styles.group}
+              onClick={handleChange}
+              to={`/register`}
+          >
+            <button type="submit" className={styles.buttonreg}>
+              Sign Up
             </button>
           </Link>
         </form>

@@ -9,7 +9,7 @@ import icon from "../images/emoji.svg";
 import styles from "../styles/Chat.module.css";
 import Messages from "./Messages";
 
-const socket = io.connect("https://chat-react-0o8u.onrender.com");
+const socket = io.connect("https://chat-react-0o8u.onrender.com/");
 
 const Chat = () => {
   const { search } = useLocation();
@@ -56,6 +56,8 @@ const Chat = () => {
   };
 
   const onEmojiClick = ({ emoji }) => setMessage(`${message} ${emoji}`);
+
+
 
   return (
     <div className={styles.wrap}>
